@@ -41,14 +41,14 @@ export default function App() {
         {tab === 'soal1' ? (
           <>
             <InfoCard
-              title="Laporan Praktikum Modul 3"
+              title="UTS Lab. Pemrograman Mobile Ganjil 2026"
               status="selesai"
-              onPress={() => Alert.alert('Detail', 'Laporan Praktikum Modul 3: selesai')}
+              onPress={() => Alert.alert('Detail', 'UTS Lab. Pemrograman Mobile Ganjil 2026: selesai')}
             />
             <InfoCard
-              title="Proyek Aplikasi Mobile"
+              title="UAS Lab. Pemrograman Mobile Genap 2026"
               status="proses"
-              onPress={() => Alert.alert('Detail', 'Proyek Aplikasi Mobile: proses')}
+              onPress={() => Alert.alert('Detail', 'UAS Lab. Pemrograman Mobile Genap 2026: proses')}
             />
           </>
         ) : (

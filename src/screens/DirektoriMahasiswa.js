@@ -1,19 +1,20 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, FlatList, StyleSheet } from 'react-native';
 
-// Dataset statis di luar komponen utama.
+// Data
 const DAFTAR_MAHASISWA = [
   { id: '1', nama: 'Alifia Putri', prodi: 'Sistem Informasi' },
   { id: '2', nama: 'Budi Santoso', prodi: 'Teknologi Informasi' },
   { id: '3', nama: 'Citra Dewi', prodi: 'Sistem Informasi' },
   { id: '4', nama: 'Dimas Anggara', prodi: 'Teknik Informatika' },
   { id: '5', nama: 'Eka Nur Safitri', prodi: 'Sistem Informasi' },
+  { id: '6', nama: 'Christian Lombu', prodi: 'Teknologi Informasi' },
 ];
 
 export default function DirektoriMahasiswa() {
   const [keyword, setKeyword] = useState('');
 
-  // Filter real-time, tidak peka huruf besar/kecil.
+  // Filter real-time
   const hasil = DAFTAR_MAHASISWA.filter((item) =>
     item.nama.toLowerCase().includes(keyword.toLowerCase())
   );
