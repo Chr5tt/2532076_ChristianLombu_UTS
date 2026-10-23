@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 
-// Komponen kartu yang dipakai ulang lewat props: title, status, onPress.
+// title, status, onPress.
 export default function InfoCard({ title, status, onPress }) {
   const selesai = status === 'selesai';
   const warna = selesai ? '#2E9E4F' : '#F28C28';

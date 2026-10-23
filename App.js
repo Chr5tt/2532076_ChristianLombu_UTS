@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import {
-  SafeAreaView,
   View,
   Text,
   TouchableOpacity,
@@ -8,6 +7,7 @@ import {
   StatusBar,
   StyleSheet,
 } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import InfoCard from './src/components/InfoCard';
 import DirektoriMahasiswa from './src/screens/DirektoriMahasiswa';
 
@@ -60,7 +60,7 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  safe: { flex: 1, backgroundColor: '#F3F4F6', paddingTop: 30 },
+  safe: { flex: 1, backgroundColor: '#F3F4F6' },
   tabBar: {
     flexDirection: 'row',
     marginHorizontal: 16,
